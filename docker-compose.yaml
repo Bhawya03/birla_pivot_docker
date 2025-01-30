@@ -1,0 +1,36 @@
+#version: '3.8'
+#
+#services:
+#  db:
+#    image: postgres
+#    container_name: postgres_container
+#    restart: always
+#    environment:
+#      POSTGRES_USER: postgres
+#      POSTGRES_PASSWORD: sky@2024
+#      POSTGRES_DB: node
+#    ports:
+#      - "5432:5432"
+#    volumes:
+#      - C:\postgres_container_data:/var/lib/postgresql/data
+#
+#  backend:
+#    build: .
+#    container_name: dev_container
+#    restart: always
+#    depends_on:
+#      - db
+#    environment:
+#      SPRING_APPLICATION_NAME: Devops
+#      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/node1
+#      SPRING_DATASOURCE_USERNAME: postgres
+#      SPRING_DATASOURCE_PASSWORD: sky@2024
+#      SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.postgresql.Driver
+#      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+#      SPRING_JPA_SHOW_SQL: "true"
+#      SERVER_PORT: 8091
+#    ports:
+#      - "8090:8090"
+#
+#volumes:
+#  postgres_data:
