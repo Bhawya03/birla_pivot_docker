@@ -8,10 +8,6 @@ The Notes Application is a simple RESTful API built with Spring Boot, designed t
 - Spring Boot with Spring Data JPA for data management
 - PostgreSQL as the database
 - Dockerized application for seamless deployment
-- Logging for tracking and debugging
-
-## Logging Method Used
-The application utilizes Spring Boot's built-in logging, which is based on SLF4J and Logback. Logs provide insights into application behavior and can be customized using `application.properties`.
 
 ## Docker Images
 | Image | Description |
